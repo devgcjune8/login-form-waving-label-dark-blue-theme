@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(rgb(10, 7, 29), rgb(4, 4, 92));
+    display: flex;
+    flex-direction: column;
+    color: rgb(72, 64, 184);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.login-container {
+    background-color: rgb(4, 4, 34);
+    padding: 20px 40px;
+    border-radius: 3px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 8.6vh;;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(107, 134, 221);
+}
+
+.form-container {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.form-container input {
+    background-color: transparent;
+    border: 0;
+    color: aliceblue;
+    border-bottom: 3px solid rgb(65, 131, 131);
+    display: block;
+    padding: 10px 3px;
+    font-size: 1.3em;
+    width: 100%;
+    
+}
+.form-container input:active,  .form-container input:hover  {
+    border-bottom: 3px solid rgb(143, 236, 243);
+    transition: border-bottom 0.43s;
+    
+}
+
+.login-btn {
+    cursor: pointer;
+    border-radius: 10px 0 10px;
+    width: 100%;
+    border: 1px;
+    border: 2px solid rgba(13, 20, 92, 0.856);
+    font-size: 1.4em;
+    background-color: rgb(127, 230, 224);
+    padding: 10px 0;
+}
+
+.login-btn:hover, .login-btn:active {
+    color: wheat;
+    border: 2px solid rgb(76, 240, 232);
+    background-color: rgb(4, 29, 28);
+    transition: all 0.43s;
+}
+.login-btn:active {
+    transform: scale(0.95091212);
+}
+
+.form-container input:focus, .form-container input:valid  {
+    outline: 0;
+}
+
+.form-container label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.form-container label span {
+    display: inline-block;
+    font-size: 1.5em;
+    min-width: 5px;
+    transition: 0.6s cubic-bezier(0.43, -0.74, 0.2, 0.84)
+}
+
+.form-container input:focus + label span, .form-container input:valid + label span {
+    color:rgb(143, 236, 243);
+    transform: translateY(-35px);
+    
+}
+a:hover {
+    color: aqua;
+    transition: color 0.43s;
+}
+.login-title-change-color {
+    color: aqua;
+    transition: color 0.43s;
+}
